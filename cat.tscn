@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cvdtvmi8k5mf1"]
+[gd_scene load_steps=22 format=3 uid="uid://cvdtvmi8k5mf1"]
 
 [ext_resource type="Texture2D" uid="uid://uppqlb54drc7" path="res://cat sprite/cat1.png" id="1_6fl1u"]
 [ext_resource type="Texture2D" uid="uid://dui4aw5f1jua" path="res://cat sprite/cat2.png" id="2_w46py"]
@@ -9,6 +9,30 @@
 [sub_resource type="AtlasTexture" id="AtlasTexture_6fl1u"]
 atlas = ExtResource("1_6fl1u")
 region = Rect2(0, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73ra0"]
+atlas = ExtResource("3_2u0g4")
+region = Rect2(0, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thjh7"]
+atlas = ExtResource("3_2u0g4")
+region = Rect2(20, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfnqg"]
+atlas = ExtResource("3_2u0g4")
+region = Rect2(40, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ww1e7"]
+atlas = ExtResource("3_2u0g4")
+region = Rect2(60, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkcfy"]
+atlas = ExtResource("3_2u0g4")
+region = Rect2(80, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1mtdq"]
+atlas = ExtResource("3_2u0g4")
+region = Rect2(100, 0, 20, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w46py"]
 atlas = ExtResource("1_6fl1u")
@@ -46,70 +70,14 @@ region = Rect2(80, 0, 20, 16)
 atlas = ExtResource("2_w46py")
 region = Rect2(100, 0, 20, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_73ra0"]
-atlas = ExtResource("3_2u0g4")
-region = Rect2(0, 0, 20, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_thjh7"]
-atlas = ExtResource("3_2u0g4")
-region = Rect2(20, 0, 20, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lfnqg"]
-atlas = ExtResource("3_2u0g4")
-region = Rect2(40, 0, 20, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ww1e7"]
-atlas = ExtResource("3_2u0g4")
-region = Rect2(60, 0, 20, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wkcfy"]
-atlas = ExtResource("3_2u0g4")
-region = Rect2(80, 0, 20, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1mtdq"]
-atlas = ExtResource("3_2u0g4")
-region = Rect2(100, 0, 20, 16)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_f1g25"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6fl1u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w46py")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2u0g4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2hdoq")
-}],
-"loop": false,
-"name": &"animation 1",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2v165")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eyw7o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7rjga")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_giwe8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ma4b3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_y5qyo")
 }],
 "loop": true,
-"name": &"animation 2",
+"name": &"default",
 "speed": 5.0
 }, {
 "frames": [{
@@ -132,19 +100,52 @@ animations = [{
 "texture": SubResource("AtlasTexture_1mtdq")
 }],
 "loop": true,
-"name": &"animation3",
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_6fl1u")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_w46py")
+}, {
+"duration": 4.0,
+"texture": SubResource("AtlasTexture_2u0g4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hdoq")
+}],
+"loop": false,
+"name": &"sit",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_2v165")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyw7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7rjga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_giwe8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ma4b3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5qyo")
 }],
 "loop": true,
-"name": &"default",
+"name": &"walk",
 "speed": 5.0
 }]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D"]
 material = SubResource("CanvasItemMaterial_2hdoq")
 sprite_frames = SubResource("SpriteFrames_f1g25")
-animation = &"animation 2"
+animation = &"run"
+autoplay = "walk"
