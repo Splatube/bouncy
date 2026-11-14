@@ -757,6 +757,7 @@ position = Vector2(1430, 170)
 position = Vector2(3289, 207)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1135569307]
+position = Vector2(280, 572)
 script = ExtResource("8_5vw27")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=998059355]
