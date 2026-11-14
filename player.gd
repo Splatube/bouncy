@@ -33,5 +33,8 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("sit")
 			
 	$AnimatedSprite2D.scale.y = 1+(velocity.y/1000)
+	
+	for can in get_parent().get_children():
+		print(can)
 
 	move_and_slide()
