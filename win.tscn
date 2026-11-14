@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjl1jprlacudd"]
+
+[ext_resource type="Script" uid="uid://47wfvgb3uo6t" path="res://button.gd" id="1_wao2c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hgi8f"]
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 329.0
+offset_top = 100.0
+offset_right = 825.0
+offset_bottom = 377.0
+text = "You WIN!!!
+"
+label_settings = SubResource("LabelSettings_hgi8f")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 263.0001
+offset_top = 305.0
+offset_right = 351.0001
+offset_bottom = 336.0
+scale = Vector2(7.5379653, 7.631169)
+text = "Play Again"
+script = ExtResource("1_wao2c")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
