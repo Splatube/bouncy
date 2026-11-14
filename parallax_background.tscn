@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bw2veor4y2uhx"]
+[gd_scene load_steps=0 format=3 uid="uid://bw2veor4y2uhx"]
 
 [ext_resource type="Texture2D" uid="uid://dihlaatch00hp" path="res://Background/sunny-land-forest-files/Sunny-land-forest-files/demo/assets/environment/background.png" id="1_si5dj"]
 [ext_resource type="Texture2D" uid="uid://c81qv2ht2fv58" path="res://Background/sunny-land-forest-files/Sunny-land-forest-files/demo/assets/environment/middleground.png" id="2_6h8ff"]
