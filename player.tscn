@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dx2miamulub26"]
+[gd_scene format=3 uid="uid://dx2miamulub26"]
 
 [ext_resource type="Script" uid="uid://8he1s5vthj27" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="PackedScene" uid="uid://cvdtvmi8k5mf1" path="res://cat.tscn" id="2_onrkg"]
@@ -6,13 +6,16 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
 size = Vector2(19, 15)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=775864795]
 scale = Vector2(4, 4)
 script = ExtResource("1_onrkg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1086664062]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_onrkg")
 
-[node name="AnimatedSprite2D" parent="." instance=ExtResource("2_onrkg")]
+[node name="AnimatedSprite2D" parent="." unique_id=1710406549 instance=ExtResource("2_onrkg")]
 animation = &"animation 1"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=843485328]
+position = Vector2(-1, 1)
