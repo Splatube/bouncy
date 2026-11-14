@@ -1,11 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://tr42wjlgbluq"]
+[gd_scene load_steps=4 format=3 uid="uid://tr42wjlgbluq"]
 
-[ext_resource type="Texture2D" uid="uid://d24kbksx1lj1y" path="res://Objects/tunacan.png" id="1_a3vh3"]
+[ext_resource type="Texture2D" uid="uid://coi0sd3ij6bd1" path="res://Objects/tunacan.png" id="1_a3vh3"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_a3vh3"]
+bounce = 0.35
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s7rlf"]
 size = Vector2(23, 30)
 
 [node name="Tuna can" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_a3vh3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -11)
