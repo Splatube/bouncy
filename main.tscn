@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dx2miamulub26" path="res://player.tscn" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://bmy6y337hqhfg" path="res://icon.svg" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://tr42wjlgbluq" path="res://tuna_can.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bw2veor4y2uhx" path="res://parallax_background.tscn" id="4_1bvp3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_ig7tw")
@@ -149,3 +150,5 @@ position = Vector2(495, 216)
 
 [node name="Tuna can" parent="." unique_id=1180835750 instance=ExtResource("3_h2yge")]
 position = Vector2(453, 225)
+
+[node name="ParallaxBackground" parent="." unique_id=1152114022 instance=ExtResource("4_1bvp3")]

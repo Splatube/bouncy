@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bw2veor4y2uhx"]
+
+[ext_resource type="Texture2D" uid="uid://dihlaatch00hp" path="res://Background/sunny-land-forest-files/Sunny-land-forest-files/demo/assets/environment/background.png" id="1_si5dj"]
+[ext_resource type="Texture2D" uid="uid://c81qv2ht2fv58" path="res://Background/sunny-land-forest-files/Sunny-land-forest-files/demo/assets/environment/middleground.png" id="2_6h8ff"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=1152114022]
+
+[node name="Layer 1" type="ParallaxLayer" parent="." unique_id=2023799796]
+motion_mirroring = Vector2(1230, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Layer 1" unique_id=426424063]
+position = Vector2(493, 293.99997)
+scale = Vector2(6.5078125, 4.5260415)
+texture = ExtResource("1_si5dj")
+
+[node name="Layer 2" type="ParallaxLayer" parent="." unique_id=1632312203]
+motion_mirroring = Vector2(1332, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Layer 2" unique_id=1985270818]
+light_mask = 3
+texture_filter = 1
+position = Vector2(583, 241)
+scale = Vector2(3.4687505, 3.4687502)
+texture = ExtResource("2_6h8ff")
