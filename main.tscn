@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bw2veor4y2uhx" path="res://parallax_background.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dhift48a74bwn" path="res://killzone.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://dil636t0inpts" path="res://bowl.tscn" id="7_272bh"]
+[ext_resource type="Script" uid="uid://bc4wt425vkia" path="res://area_2d.gd" id="8_5vw27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_1bvp3")
@@ -721,6 +722,9 @@ texture = ExtResource("1_1bvp3")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_s7wsd"]
+distance = -568.0
+
 [node name="Node2D" type="Node2D" unique_id=1384982811]
 script = ExtResource("1_7mycd")
 
@@ -751,3 +755,9 @@ position = Vector2(1430, 170)
 
 [node name="Bowl" parent="." unique_id=1767830988 instance=ExtResource("7_272bh")]
 position = Vector2(3289, 207)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1135569307]
+script = ExtResource("8_5vw27")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=998059355]
+shape = SubResource("WorldBoundaryShape2D_s7wsd")
