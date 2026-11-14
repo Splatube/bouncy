@@ -16,8 +16,6 @@ shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="AnimatedSprite2D" parent="." unique_id=1710406549 instance=ExtResource("2_onrkg")]
 animation = &"animation 1"
-frame = 0
-frame_progress = 0.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=843485328]
 position = Vector2(-1, 1)
