@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dil636t0inpts"]
+
+[ext_resource type="Texture2D" uid="uid://x2ue75ntu4vk" path="res://bowl.png" id="1_l4bwr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y8sj4"]
+radius = 4.5
+height = 16.0
+
+[node name="Bowl" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_y8sj4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_l4bwr")

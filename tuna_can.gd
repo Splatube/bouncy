@@ -10,6 +10,9 @@ func _input(event) -> void:
 				position = Vector2(0,0)
 				set_deferred("freeze", true)
 			else:
+				if global_position.distance_to(get_node("/root/Node2D/Bowl").global_position) < 100:
+					get_node("/root/Node2D/Bowl").get_child(1).texture = load("res://tuna-bowl.png")
+					queue_free()
 				pos = global_position
 				reparent(get_node("/root/Node2D"))
 				global_position = pos
