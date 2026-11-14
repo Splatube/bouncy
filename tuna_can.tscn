@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://boo02ot3e6e5q"]
+
+[ext_resource type="Texture2D" uid="uid://d24kbksx1lj1y" path="res://Objects/tunacan.png" id="1_a3vh3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7rlf"]
+size = Vector2(38, 48)
+
+[node name="Tuna can" type="RigidBody2D" unique_id=1320635045]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1263108625]
+position = Vector2(315, 227)
+scale = Vector2(1.7083334, 1.7083333)
+texture = ExtResource("1_a3vh3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1662815155]
+position = Vector2(315, 237)
+shape = SubResource("RectangleShape2D_s7rlf")
