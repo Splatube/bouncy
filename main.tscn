@@ -732,7 +732,7 @@ tile_set = SubResource("TileSet_h2yge")
 position = Vector2(1430, 170)
 collision_layer = 2
 
-[node name="Mouth" type="Marker2D" parent="Player"]
+[node name="Mouth" type="Marker2D" parent="Player" unique_id=279328109]
 position = Vector2(-9, -2)
 
 [node name="Tuna can" parent="." unique_id=1121504113 instance=ExtResource("3_h2yge")]
@@ -741,3 +741,6 @@ collision_layer = 2
 
 [node name="killzone" parent="." unique_id=1310292065 instance=ExtResource("5_lquwl")]
 position = Vector2(796, 566)
+
+[node name="killzone" parent="killzone" unique_id=1072482412 instance=ExtResource("5_lquwl")]
+position = Vector2(3.807495, 3.5438232)
