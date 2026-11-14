@@ -12,6 +12,8 @@ func _input(event) -> void:
 			else:
 				if global_position.distance_to(get_node("/root/Node2D/Bowl").global_position) < 100:
 					get_node("/root/Node2D/Bowl").get_child(1).texture = load("res://tuna-bowl.png")
+					var win = load("res://win.tscn")
+					get_parent().add_child(win)
 					queue_free()
 				pos = global_position
 				reparent(get_node("/root/Node2D"))
