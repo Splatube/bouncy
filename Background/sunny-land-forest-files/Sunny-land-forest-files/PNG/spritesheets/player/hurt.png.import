@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d24kbksx1lj1y"
-path="res://.godot/imported/tunacan.png-5554cd4e0c7669147837348852e12b36.ctex"
+uid="uid://cl4djo01g4xd3"
+path="res://.godot/imported/hurt.png-99a114c330fc2e84268c88c1019988be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/tunacan.png"
-dest_files=["res://.godot/imported/tunacan.png-5554cd4e0c7669147837348852e12b36.ctex"]
+source_file="res://Background/sunny-land-forest-files/Sunny-land-forest-files/PNG/spritesheets/player/hurt.png"
+dest_files=["res://.godot/imported/hurt.png-99a114c330fc2e84268c88c1019988be.ctex"]
 
 [params]
 
