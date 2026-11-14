@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bw2veor4y2uhx" path="res://parallax_background.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" path="res://killzone.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://dil636t0inpts" path="res://bowl.tscn" id="7_272bh"]
-[ext_resource type="Script" path="res://area_2d.gd" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://bc4wt425vkia" path="res://area_2d.gd" id="8_5vw27"]
 [ext_resource type="PackedScene" uid="uid://cjl1jprlacudd" path="res://win.tscn" id="9_kek77"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
@@ -756,7 +756,7 @@ position = Vector2(1430, 170)
 [node name="Bowl" parent="." instance=ExtResource("7_272bh")]
 position = Vector2(325, 451)
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1135569307]
+[node name="Area2D" type="Area2D" parent="."]
 position = Vector2(280, 572)
 script = ExtResource("8_5vw27")
 

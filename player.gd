@@ -9,6 +9,9 @@ func respawn ():
 
 
 func _physics_process(delta: float) -> void:
+	if global_position.y > 500:
+		get_tree().change_scene_to_file("res://main.tscn")
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
