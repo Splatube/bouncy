@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dx2miamulub26" path="res://player.tscn" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://dq83215mx7o8m" path="res://Background/sunny-land-forest-files/Sunny-land-forest-files/PNG/environment/layers/middleground.png" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://cxwur65ekubp" path="res://main.gd" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://tr42wjlgbluq" path="res://tuna_can.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bw2veor4y2uhx" path="res://parallax_background.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dhift48a74bwn" path="res://killzone.tscn" id="5_lquwl"]
@@ -720,6 +721,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 
 [node name="Node2D" type="Node2D" unique_id=1384982811]
+script = ExtResource("1_7mycd")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=91759687]
 position = Vector2(-105, 1)
@@ -741,6 +743,7 @@ collision_layer = 2
 
 [node name="killzone" parent="." unique_id=1310292065 instance=ExtResource("5_lquwl")]
 position = Vector2(796, 566)
+collision_mask = 3
 
-[node name="killzone" parent="killzone" unique_id=1072482412 instance=ExtResource("5_lquwl")]
-position = Vector2(3.807495, 3.5438232)
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1605033617]
+position = Vector2(1430, 170)
