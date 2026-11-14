@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://dmgy4dcgagm2c"]
+[gd_scene load_steps=8 format=4 uid="uid://dmgy4dcgagm2c"]
 
 [ext_resource type="PackedScene" uid="uid://dx2miamulub26" path="res://player.tscn" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://dq83215mx7o8m" path="res://Background/sunny-land-forest-files/Sunny-land-forest-files/PNG/environment/layers/middleground.png" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://tr42wjlgbluq" path="res://tuna_can.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bw2veor4y2uhx" path="res://parallax_background.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dil636t0inpts" path="res://bowl.tscn" id="5_lquwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_1bvp3")
@@ -737,3 +738,6 @@ position = Vector2(-9, -2)
 [node name="Tuna can" parent="." instance=ExtResource("3_h2yge")]
 position = Vector2(440, 280)
 collision_layer = 2
+
+[node name="Bowl" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(1021, 429)

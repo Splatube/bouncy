@@ -35,7 +35,5 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("sit")
 			
 	$AnimatedSprite2D.scale.y = 1+(velocity.y/1000)
-	if get_child_count() == 1:
-		$"Tuna can".position = (velocity.y/2000)
 
 	move_and_slide()
