@@ -24,8 +24,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 		if direction > 0:
 			$AnimatedSprite2D.flip_h = true
+			$Mouth.position.x = 9
 		if direction < 0:
 			$AnimatedSprite2D.flip_h = false
+			$Mouth.position.x = -9
 	if velocity.y != 0:
 		$AnimatedSprite2D.animation = "jump"
 		if $AnimatedSprite2D.frame != 3:
@@ -37,8 +39,7 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("sit")
 			
 	$AnimatedSprite2D.scale.y = 1+(velocity.y/1000)
-	
-	for can in get_parent().get_children():
-		print(can)
+	if get_child_count() == 1:
+		$"Tuna can".position = (velocity.y/2000)
 
 	move_and_slide()

@@ -732,6 +732,9 @@ tile_set = SubResource("TileSet_h2yge")
 position = Vector2(1430, 170)
 collision_layer = 2
 
+[node name="Mouth" type="Marker2D" parent="Player"]
+position = Vector2(-9, -2)
+
 [node name="Tuna can" parent="." unique_id=1121504113 instance=ExtResource("3_h2yge")]
 position = Vector2(2389, 325)
 collision_layer = 2
